@@ -20,6 +20,8 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
+  username: WebCrawler
+  password: WebCrawler
 
 development:
   <<: *default
@@ -29,7 +31,7 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
-  #username: smecrawler
+  #username: WebCrawler
 
   # The password associated with the postgres role (username).
   #password:
@@ -81,5 +83,5 @@ test:
 production:
   <<: *default
   database: smecrawler_production
-  username: smecrawler
+  username: WebCrawler
   password: <%= ENV['SMECRAWLER_DATABASE_PASSWORD'] %>

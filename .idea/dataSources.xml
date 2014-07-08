@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="4178355478">
+    <data-source source="LOCAL" name="Rails smecrawler: development" uuid="c80de938-e157-4242-bee6-183e8bdfea14">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:smecrawler_development</jdbc-url>
+      <user-name>smecrawler</user-name>
+      <user-password>dfd9dfc7dfcfdfc9dfd8dfcbdfdddfc6dfcfdfd8</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails smecrawler: test" uuid="291c04e3-0ac8-446b-bba7-dd6c2f63fd6b">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:smecrawler_test</jdbc-url>
+      <user-name>smecrawler</user-name>
+      <user-password>dfd9dfc7dfcfdfc9dfd8dfcbdfdddfc6dfcfdfd8</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails smecrawler: production" uuid="aea25cb0-2642-4704-b2dd-f8d520eb68b2">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:smecrawler_production</jdbc-url>
+      <user-name>smecrawler</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dfe7dfefdfe9dff8dfebdffddfe6dfefdff8dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
