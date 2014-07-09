@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
-  #belongs_to :author
+  belongs_to :author
 
   def self.parse_from_zive(html)
     doc = Nokogiri::HTML.parse(html)
@@ -8,8 +8,8 @@ class Article < ActiveRecord::Base
       anchor = div.search('.articleTitle a').first
       Article.create!(
           zive_id: anchor[:href][/\/(\d+)\//, 1].to_i,
-          title: anchor.text,
-          perex: div.search('p').text
+          title: anchor.text[0..254],
+          perex: div.search('p').text[0..254]
       )
     end
 

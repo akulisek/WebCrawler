@@ -17,6 +17,9 @@ ActiveRecord::Schema.define(version: 20140709070549) do
   enable_extension "plpgsql"
 
   create_table "articles", force: true do |t|
+    t.string   "title",      null: false
+    t.string   "perex"
+    t.string   "zive_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
