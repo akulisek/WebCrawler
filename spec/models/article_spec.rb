@@ -26,7 +26,7 @@ RSpec.describe Article, :type => :model do
     article.perex = article.perex[/[^\t\n]*/]
 
     expect(article.title).to eq('Vylepšujeme si prehliadače: Tipy na užitočné rozšírenia')
-    expect(article.perex).to eq("Prinášame výber šikovných rozšírení, ktorými si môžete doplniť prehliadače Chrome, Firefox i Opera.")
+    expect(article.perex).to eq('Prinášame výber šikovných rozšírení, ktorými si môžete doplniť prehliadače Chrome, Firefox i Opera.')
     expect(article.zive_id).to eq(97000)
   end
 
