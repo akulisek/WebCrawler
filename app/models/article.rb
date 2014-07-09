@@ -8,8 +8,10 @@ class Article < ActiveRecord::Base
       anchor = div.search('.articleTitle a').first
       Article.create!(
           zive_id: anchor[:href][/\/(\d+)\//, 1].to_i,
-          title: anchor.text[0..254],
-          perex: div.search('p').text[0..254]
+          title: anchor.text[0..254].strip,
+          perex: div.search('.articlePerex').text.split("\t\t\t\t",3)[2].strip
+      # got: "\n\t\t\t\tVideo\t\t\t\t Prinášame výber šikovných rozšírení, ktorými si môžete doplniť prehliadače Chrome, Firefox i Opera.\t\t\t"
+
       )
     end
 
